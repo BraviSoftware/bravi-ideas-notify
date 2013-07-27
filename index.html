@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script src="socket.io.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript">
+    	var socket = io.connect('http://localhost:8080/');
+    	socket.on('idea-inserted', function(data) {
+    		console.log(data);
+    	});
+    	function notify_server() {
+    		socket.emit('idea-commented', "comment!!");
+    	}
+
+    	$(function(){
+    		$('#bla').click(function() {
+    			notify_server();
+    		});
+    	});
+    </script>    	
+  </head>
+  <body>
+  	<button id="bla">Notify</button>
+  </body>
+</html>

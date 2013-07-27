@@ -1,0 +1,23 @@
+{
+  "name": "bravi-ideas-notify",
+  "version": "0.1.0",
+  "description": "Notification from bravi ideas",
+  "main": "server.js",
+  "dependencies": {
+    "socket.io": "~0.9.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BraviSoftware/bravi-ideas-notify.git"
+  },
+  "author": "Danillo Corvalan, Max Nunes, Lauro Caetano",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/BraviSoftware/bravi-ideas-notify/issues"
+  }
+}
