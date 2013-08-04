@@ -1,5 +1,10 @@
 var io = require('socket.io').listen(8080);
 
+io.configure(function () { 
+  io.set("transports", ["xhr-polling"]); 
+  io.set("polling duration", 10); 
+});
+
 io.sockets.on('connection', function(socket) {
 	broadcastEventBuilder(socket)
 		.addEvent('idea-new-comment')
