@@ -1,4 +1,4 @@
-var io = require('socket.io').listen(8080);
+var io = require('socket.io').listen(80, {origins: '*:*'});
 
 io.configure(function () { 
   io.set("transports", ["xhr-polling"]); 
