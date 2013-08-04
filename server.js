@@ -5,7 +5,8 @@ io.sockets.on('connection', function(socket) {
 		.addEvent('idea-new-comment')
 		.addEvent('idea-comment-removed')
 		.addEvent('idea-rate-like')
-		.addEvent('idea-rate-dislike');
+		.addEvent('idea-rate-dislike')
+		.addEvent('new-idea');
 });
 
 function broadcastEventBuilder(theSocket) {
