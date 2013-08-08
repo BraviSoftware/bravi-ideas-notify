@@ -6,7 +6,6 @@ io.configure(function () {
   io.set("polling duration", 10); 
 });
 
-
 io.sockets.on('connection', function(socket) {
 	broadcastEventBuilder(socket)
 		.addEvent('idea-new-comment')
